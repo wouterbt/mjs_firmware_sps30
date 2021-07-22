@@ -35,9 +35,10 @@ void getData(int length, byte *buffer) {
   Wire.requestFrom(SPS30_ADDR, length, false);
   int j = 0;
   for (int i = 0; i < length; i++) {
-    buffer[j] = Wire.read();
-    if ((i + 1) % 3) { // ignore CRC bytes
-      j++;
+    if ((i + 1) % 3) {
+      buffer[j++] = Wire.read();
+    } else {
+      Wire.read(); // ignore CRC bytes
     }
   }
 }
