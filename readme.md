@@ -7,7 +7,7 @@ De nieuwste versie van de mjs\_firmware gebruikt ook de SPS30 sensor. Echter, di
 
 Een ander verschil is dat de nieuwste versie van de mjs\_firmware _alle_ waarden uit de sensor doorgeeft via LoRa.
 
-Voor het uploaden van de software naar het Meet-je-stad-bordje is een [seriële programmer](https://github.com/meetjestad/mjs_programmer) nodig. Je kan voor het uploaden van de software ook een Arduino gebruiken als je die toevallig al hebt. Zet de power-jumper op "PRG" en sluit de programmer-pinnetjes als volgt aan: 
+Voor het uploaden van de software naar het Meet-je-stad-bordje is een [seriële programmer](https://github.com/meetjestad/mjs_programmer) nodig. Je kan voor het uploaden van de software ook een Arduino gebruiken als je die toevallig al hebt. Zet de power-jumper op "PRG" en sluit de programmer-pinnetjes als volgt aan:  
 Vin → 5V op de Arduino  
 GND → GND op de Arduino  
 RxD → Digitaal 0 (RX) op de Arduino  
